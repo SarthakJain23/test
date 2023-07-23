@@ -6483,7 +6483,7 @@ a .products-details-cat i {
   transition: all 1s ease;
 }
 
-.products-div img:hover {
-  transform: scale(1.2);
-  z-index: 1;
+.products-div a:hover {
+  /* transform: scale(1.2); */
+   z-index: 1;
 }

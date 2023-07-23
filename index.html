@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Aneja Masterji's Plywood</title>
+
+    <!--Favicon-->
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="192x192" href="favicon/android-icon-192x192.png" />
+    <link rel="apple-touch-icon" sizes="512x512" href="favicon/android-chrome-512x512.png" />
+    <link rel="apple-touch-icon" href="favicon/apple-touch-icon.png" />
+    <link rel="apple-touch-icon" href="favicon/favicon.ico" />
+    <link rel="manifest" href="favicon/manifest.json" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="msapplication-TileImage" content="../../ms-icon-144x144.html" />
+    <meta name="theme-color" content="#ffffff" />
+
+    <!--    fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Mulish&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/bootstrap-theme.min.css" rel="stylesheet" />
+    <link href="css/font-awesome.min.css" rel="stylesheet" />
+    <link href="css/strock-icon.css" rel="stylesheet" />
+
+    <!--    owl-carousel-->
+    <link rel="stylesheet" href="vendors/owlcarousel/owl.carousel.css" />
+    <link href="vendors/rs-plugin/css/settings.css" rel="stylesheet" />
+    <link href="vendors/magnific/magnific-popup.css" rel="stylesheet" />
+    <!--    css-->
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<style>
+    #nav-custom-contact {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 200px;
+        background-color: #efd30b;
+        border-radius: 25px;
+        height: 30px;
+        position: relative;
+        top: 8px;
+        left: 10px;
+        transition: all 1s ease;
+    }
+
+    #nav-custom-contact:hover {
+        transform: scale(1.05);
+    }
+
+    .products-grid {
+        display: grid;
+        width: 100%;
+        height: 100vh;
+        grid-template-columns: auto auto auto auto auto auto;
+        grid-template-rows: 25vh 25vh 25vh 25vh;
+    }
+
+    .product-heading {
+        width: 200px;
+        grid-area: 1 / 1 / -1 / 2;
+    }
+
+    .products-grid img {
+        width: 100%;
+        height: 100%;
+    }
+</style>
+
+<body>
+    <header class="row header navbar-static-top" id="main_navbar">
+        <div class="container">
+            <div class="row m0 social-info">
+                <ul class="social-icon">
+                    <!-- <li>
+                        <a href="#"><i class="fa fa-facebook"></i></a>
+                    </li> -->
+                    <li class="tel">
+                        <a href="tel:+9198140 40328"><i class="fa fa-phone"></i>+91 98140-40328
+                        </a>
+                    </li>
+                    <li class="email">
+                        <a href="#"><i class="fa fa-envelope-o"></i> aneja.m.ply@gmail.com</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="logo_part">
+            <div class="logo">
+                <a href="index.html" class="brand_logo">
+                    <img src="images/header/logo.png" alt="logo image" />
+                </a>
+            </div>
+        </div>
+        <div class="main-menu">
+            <nav class="navbar navbar-default">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main_nav"
+                    aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <div class="menu row m0">
+                    <div class="collapse navbar-collapse" id="main_nav">
+                        <ul class="nav navbar-nav">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="#products">Products</a></li>
+                            <li><a href="#partners">Partners</a></li>
+                            <li><a href="our-journey.html">Our Journey</a></li>
+                            <li><a href="index.html">Our Journey</a></li>
+                            <li id="nav-custom-contact">
+                                <a style="color: #fff;" href="index.html">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- /.navbar-collapse -->
+            </nav>
+        </div>
+    </header>
+    <!--rv-slider-->
+    <section class="bannercontainer row">
+        <div class="rev_slider banner row m0" id="rev_slider" data-version="5.0">
+            <ul>
+                <li data-transition="slidehorizontal" data-delay="2000">
+                    <img src="images/slider-img/bg.jpg" alt="" data-bgposition="center top" data-bgfit="cover"
+                        data-bgrepeat="no-repeat" data-bgparallax="1" />
+                </li>
+                <li data-transition="slidehorizontal" data-delay="2000">
+                    <img src="images/slider-img/2.jpg" alt="" data-bgposition="center top" data-bgfit="cover"
+                        data-bgrepeat="no-repeat" data-bgparallax="1" />
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="products-section">
+        <div class="products-div">
+            <div class="products-title"><b>PRODUCTS</b></div>
+            <img src="/images/products/1.jpg" alt="" onmouseover="hover(this)" onmouseout="unhover(this)">
+            <img src="/images/products/1.jpg" alt="" onmouseover="hover(this)" onmouseout="unhover(this)">
+            <img src="/images/products/1.jpg" alt="" onmouseover="hover(this)" onmouseout="unhover(this)">
+            <img src="/images/products/1.jpg" alt="" onmouseover="hover(this)" onmouseout="unhover(this)">
+            <img src="/images/products/1.jpg" alt="" onmouseover="hover(this)" onmouseout="unhover(this)">
+            <img src="/images/products/1.jpg" alt="" onmouseover="hover(this)" onmouseout="unhover(this)">
+            <img src="/images/products/1.jpg" alt="" onmouseover="hover(this)" onmouseout="unhover(this)">
+            <img src="/images/products/1.jpg" alt="" onmouseover="hover(this)" onmouseout="unhover(this)">
+            <img src="/images/products/1.jpg" alt="" onmouseover="hover(this)" onmouseout="unhover(this)">
+            <img src="/images/products/1.jpg" alt="" onmouseover="hover(this)" onmouseout="unhover(this)">
+            <img src="/images/products/1.jpg" alt="" onmouseover="hover(this)" onmouseout="unhover(this)">
+            <img src="/images/products/1.jpg" alt="" onmouseover="hover(this)" onmouseout="unhover(this)">
+            <img src="/images/products/1.jpg" alt="" onmouseover="hover(this)" onmouseout="unhover(this)">
+            <img src="/images/products/1.jpg" alt="" onmouseover="hover(this)" onmouseout="unhover(this)">
+            <img src="/images/products/1.jpg" alt="" onmouseover="hover(this)" onmouseout="unhover(this)">
+            <img src="/images/products/1.jpg" alt="" onmouseover="hover(this)" onmouseout="unhover(this)">
+            <img src="/images/products/1.jpg" alt="" onmouseover="hover(this)" onmouseout="unhover(this)">
+            <img src="/images/products/1.jpg" alt="" onmouseover="hover(this)" onmouseout="unhover(this)">
+            <img src="/images/products/1.jpg" alt="" onmouseover="hover(this)" onmouseout="unhover(this)">
+            <img src="/images/products/1.jpg" alt="" onmouseover="hover(this)" onmouseout="unhover(this)">
+
+        </div>
+    </section>
+
+
+
+    <!-- clients -->
+    <section class="row clients">
+        <div class="container">
+            <div class="row m0 section_header">
+                <h2>Our Partners</h2>
+            </div>
+            <div class="row clients-logos">
+                <div class="col-md-2 col-sm-3 col-xs-6 client">
+                    <div class="row m0 inner-logo">
+                        <a href="#"><img src="images/clients-logo/1.png" alt="" /></a>
+                    </div>
+                </div>
+                <div class="col-md-2 col-sm-3 col-xs-6 client">
+                    <div class="row m0 inner-logo">
+                        <a href="#"><img src="images/clients-logo/2.png" alt="" /></a>
+                    </div>
+                </div>
+                <div class="col-md-2 col-sm-3 col-xs-6 client">
+                    <div class="row m0 inner-logo">
+                        <a href="#"><img src="images/clients-logo/3.png" alt="" /></a>
+                    </div>
+                </div>
+                <div class="col-md-2 col-sm-3 col-xs-6 client">
+                    <div class="row m0 inner-logo">
+                        <a href="#"><img src="images/clients-logo/4.png" alt="" /></a>
+                    </div>
+                </div>
+                <div class="col-md-2 col-sm-3 col-xs-6 client">
+                    <div class="row m0 inner-logo">
+                        <a href="index.html"><img src="images/clients-logo/5.png" alt="" /></a>
+                    </div>
+                </div>
+                <div class="col-md-2 col-sm-3 col-xs-6 client">
+                    <div class="row m0 inner-logo">
+                        <a href="index.html"><img src="images/clients-logo/6.png" alt="" /></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--testimonial-->
+    <section class="row sectpad testimonial-area" id="partners">
+        <div class="container">
+            <div class="row m0 section_header common">
+                <h2>What our client says</h2>
+            </div>
+            <div class="testimonial-sliders">
+                <div class="item">
+                    <div class="media testimonial">
+                        <div class="media-left">
+                            <a href="#">
+                                <img src="images/testimonial/1.jpg" alt="" />
+                            </a>
+                        </div>
+                        <div class="media-body">
+                            <p>
+                                Awesome customer handling and all type of variety available
+                            </p>
+                            <a href="https://g.co/kgs/LxSDcD">- Mr Harwinder Singh</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="media testimonial">
+                        <div class="media-left">
+                            <a href="#">
+                                <img src="images/testimonial/2.jpg" alt="" />
+                            </a>
+                        </div>
+                        <div class="media-body">
+                            <p>
+                                Awesome plywoods at affordable prices
+                                Nice young dealer
+                                Avi Aneja
+                                Respected Indian citizen
+                            </p>
+                            <a href="https://g.co/kgs/6zeToF">- Apoorva Jain</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="media testimonial">
+                        <div class="media-left">
+                            <a href="#">
+                                <img src="images/testimonial/3.jpg" alt="" />
+                            </a>
+                        </div>
+                        <div class="media-body">
+                            <p>
+                                Get what ever you want regarding wood related construction material
+                            </p>
+                            <a href="https://g.co/kgs/ZCdLa8">- Anterpreet Singh</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="media testimonial">
+                        <div class="media-left">
+                            <a href="#">
+                                <img src="images/testimonial/1.jpg" alt="" />
+                            </a>
+                        </div>
+                        <div class="media-body">
+                            <p>
+                                U can get all types plywood and other material under one roof. Price is also reasonable.
+                            </p>
+                            <a href="https://g.co/kgs/XQTNrM">- Kanwaljeet Singh</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="media testimonial">
+                        <div class="media-left">
+                            <a href="#">
+                                <img src="images/testimonial/2.jpg" alt="" />
+                            </a>
+                        </div>
+                        <div class="media-body">
+                            <p>
+                                The re dealing honestly have a good supportive staff and well managed premises
+                            </p>
+                            <a href="https://g.co/kgs/ASYyMX">- Sameer Grover</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--footer-->
+    <footer class="row">
+        <div class="row m0 footer-top">
+            <div class="container">
+                <div class="row footer-sidebar">
+                    <div class="widget about-us-widget col-sm-6 col-lg-3">
+                        <a href="index.html" class="brand_logo">
+                            <img src="images/header/logo.png" alt="logo image" />
+                        </a>
+                        <p>
+                            Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit
+                            aut fugit, sed quia consequuntur magni dolores eos qui ratione
+                            voluptatem sequi nesciunt.
+                        </p>
+                        <div class="social-icon row m0">
+                            <ul class="nav">
+                                <li>
+                                    <a href="#"><i class="fa fa-twitter"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fa fa-linkedin-square"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fa fa-facebook-square"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fa fa-skype"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fa fa-pinterest-square"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="widget widget-links col-sm-6 col-lg-3">
+                        <h4 class="widget_title">our services</h4>
+                        <div class="widget-contact-list row m0">
+                            <ul>
+                                <li>
+                                    <a href="#"><i class="fa fa-angle-right"></i>Interior Furniture</a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fa fa-angle-right"></i>Hardwood Flooring</a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fa fa-angle-right"></i>Renovation of Office
+                                        Furniture</a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fa fa-angle-right"></i>Repairing of Wood
+                                        Roof</a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fa fa-angle-right"></i>Outdoor Furniture</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="widget widget-contact col-sm-6 col-lg-3">
+                        <h4 class="widget_title">Get in Touch</h4>
+                        <div class="widget-contact-list row m0">
+                            <ul>
+                                <li>
+                                    <i class="fa fa-map-marker"></i>
+                                    <div class="fleft location_address">
+                                        New showroom New, near Lakshmi Palace, Dashmesh Colony, Rajpura, Punjab 140401
+                                    </div>
+                                </li>
+                                <li>
+                                    <i class="fa fa-phone"></i>
+                                    <div class="fleft contact_no">
+                                        <a href="#">98140-40328</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <i class="fa fa-envelope-o"></i>
+                                    <div class="fleft contact_mail">
+                                        <a href="#">aneja.m.ply@gmail.com</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <i class="icon icon-WorldWide"></i>
+                                    <div class="fleft service_time">
+                                        Mon - Sat : 9am to 8pm <br>
+                                        Sun : 9am to 2pm
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="widget widget4 widget-form col-sm-6 col-lg-3">
+                        <h4 class="widget_title">Drop a message</h4>
+                        <div class="widget-contact-list row m0">
+                            <form class="submet-form row m0" action="#" method="post">
+                                <input type="text" class="form-control" id="name" placeholder="Name" />
+                                <input type="email" class="form-control" id="email" placeholder="Email Address" />
+                                <textarea class="form-control message" placeholder="Message"></textarea>
+                                <button class="submit" type="submit">submit now</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row m0 footer-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-8">
+                        Copyright &copy; <a href="index.html">WoodWorkshop</a> 2016.
+                        <br class="visible-xs" />
+                        All rights reserved.
+                    </div>
+                    <div class="right col-sm-4">
+                        Created by:
+                        <a href="#">Sarthak</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/jquery-2.2.0.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/lightbox.js"></script>
+    <!--RS-->
+    <script src="vendors/rs-plugin/js/jquery.themepunch.tools.min.js"></script>
+    <!-- Revolution Slider Tools -->
+    <script src="vendors/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
+    <!-- Revolution Slider -->
+    <script src="vendors/rs-plugin/js/extensions/revolution.extension.actions.min.js"></script>
+    <script src="vendors/rs-plugin/js/extensions/revolution.extension.carousel.min.js"></script>
+    <script src="vendors/rs-plugin/js/extensions/revolution.extension.kenburn.min.js"></script>
+    <script src="vendors/rs-plugin/js/extensions/revolution.extension.layeranimation.min.js"></script>
+    <script src="vendors/rs-plugin/js/extensions/revolution.extension.migration.min.js"></script>
+    <script src="vendors/rs-plugin/js/extensions/revolution.extension.navigation.min.js"></script>
+    <script src="vendors/rs-plugin/js/extensions/revolution.extension.parallax.min.js"></script>
+    <script src="vendors/rs-plugin/js/extensions/revolution.extension.slideanims.min.js"></script>
+    <script src="vendors/rs-plugin/js/extensions/revolution.extension.video.min.js"></script>
+
+    <script src="vendors/isotope/isotope.min.js"></script>
+    <script src="vendors/imagesloaded/imagesloaded.pkgd.min.js"></script>
+    <script src="vendors/owlcarousel/owl.carousel.min.js"></script>
+    <script src="vendors/magnific/jquery.magnific-popup.min.js"></script>
+    <script src="js/theme.js"></script>
+    <script>
+        function hover(img) {
+            img.style.transform = "scale(1.2)";
+            img.style.zIndex = "1";
+            const images = document.querySelectorAll(".products-div img");
+            images.forEach((image) => {
+                if (image !== img) {
+                    image.style.filter = "brightness(60%)";
+                }
+            });
+            const productHeading = document.querySelector(".products-title");
+            productHeading.style.color = "#fff"
+            productHeading.style.backgroundColor = "#333"
+        }
+
+        function unhover(img) {
+            img.style.transform = "";
+            img.style.zIndex = "";
+            const images = document.querySelectorAll(".products-div img");
+            images.forEach((image) => {
+                image.style.filter = "";
+            });
+            const productHeading = document.querySelector(".products-title");
+            productHeading.style.color = "#333"
+            productHeading.style.backgroundColor = "#fff"
+        }
+    </script>
+</body>
+
+</html>

@@ -73,9 +73,23 @@
         width: 100%;
         height: 100%;
     }
+
+    .main-logo img {
+        min-width: 63px;
+        max-width: 500px;
+        position: absolute;
+        top: 180px;
+        left: 300px;
+        z-index: 1001;
+    }
 </style>
 
 <body>
+    <div class="logo-aimation">
+        <div class="main-logo">
+            <img src="images/logo/AMP logo white border.png" alt="">
+        </div>
+    </div>
     <header class="row header navbar-static-top" id="main_navbar">
         <div class="container">
             <div class="row m0 social-info">
@@ -83,20 +97,21 @@
                     <!-- <li>
                         <a href="#"><i class="fa fa-facebook"></i></a>
                     </li> -->
-                    <li class="tel">
+                    <!-- <li class="tel">
                         <a href="tel:+9198140 40328"><i class="fa fa-phone"></i>+91 98140-40328
                         </a>
                     </li>
                     <li class="email">
                         <a href="#"><i class="fa fa-envelope-o"></i> aneja.m.ply@gmail.com</a>
-                    </li>
+                    </li> -->
                 </ul>
             </div>
         </div>
+
         <div class="logo_part">
             <div class="logo">
                 <a href="index.html" class="brand_logo">
-                    <img src="images/header/logo.png" alt="logo image" />
+                    <img src="images/header/logo-1.png" alt="logo image" />
                 </a>
             </div>
         </div>
@@ -118,7 +133,8 @@
                             <li><a href="our-journey.html">Our Journey</a></li>
                             <li><a href="index.html">Our Journey</a></li>
                             <li id="nav-custom-contact">
-                                <a style="color: #fff;" href="index.html">Contact</a>
+                                <a style="color: #fff;" href="tel:+9198140 40328"><i class="fa fa-phone"></i> +91
+                                    98140-40328</a>
                             </li>
                         </ul>
                     </div>
@@ -497,6 +513,39 @@
             'wrapAround': true,
             'disableScrolling': true
         })
+
+        // Get the image element
+        var myImage = document.querySelector(".main-logo img");
+
+        // Add an event listener for the scroll event
+        window.addEventListener("scroll", function () {
+            // Get the current scroll position
+            var scrollPosition = window.pageYOffset;
+            var minTop = 89;
+
+            // Calculate the new size and position of the image based on the scroll position
+            var newWidth = 500 - scrollPosition * 5;
+            var newTop = 180 - scrollPosition;
+            var newOpacity = 1 - scrollPosition / 85;
+            var newLeft = 300 - scrollPosition;
+
+            if (newTop < minTop) {
+                newTop = minTop;
+                myImage.style.left = "10%";
+            }
+            console.log(scrollPosition);
+            if (scrollPosition >= 63) {
+                document.querySelector(".brand_logo img").style.display = "inline-block";
+            } else {
+                document.querySelector(".brand_logo img").style.display = "none";
+            }
+
+            // Update the size and position of the image
+            myImage.style.width = newWidth + "px";
+            myImage.style.top = newTop + "px";
+            myImage.style.left = newLeft + "px"
+            myImage.style.opacity = newOpacity;
+        });
     </script>
 </body>
 

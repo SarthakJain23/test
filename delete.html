@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        /* Set the initial size and position of the image */
+        #myImage {
+            width: 300px;
+            min-width: 100px;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Add the image to the page -->
+    <img id="myImage" src="images/logo/AMP logo white border.png" alt="Image">
+    <div class="con" style="background-color: aqua; height: 200vh; width: 100%;"></div>
+
+    <script>
+        // Get the image element
+        var myImage = document.getElementById("myImage");
+
+        // Add an event listener for the scroll event
+        window.addEventListener("scroll", function () {
+            // Get the current scroll position
+            var scrollPosition = window.pageYOffset;
+
+            console.log(scrollPosition);
+            // Calculate the new size and position of the image based on the scroll position
+            var newWidth = 300 - scrollPosition;
+            var newTop = 50 + scrollPosition / 10;
+
+            // Update the size and position of the image
+            myImage.style.width = newWidth + "px";
+            myImage.style.bottom = newTop + "%";
+        });
+    </script>
+
+</body>
+
+</html>

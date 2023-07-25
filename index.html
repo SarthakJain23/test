@@ -82,6 +82,21 @@
         left: 300px;
         z-index: 1001;
     }
+
+    html {
+        scroll-behavior: smooth;
+    }
+
+    .brand_logo {
+        max-height: 51px;
+
+    }
+
+    .brand_logo img {
+        height: 100%;
+        width: 100%;
+
+    }
 </style>
 
 <body>
@@ -127,7 +142,7 @@
                 <div class="menu row m0">
                     <div class="collapse navbar-collapse" id="main_nav">
                         <ul class="nav navbar-nav">
-                            <li><a href="#home">Home</a></li>
+                            <li><a href="/">Home</a></li>
                             <li><a href="#products">Products</a></li>
                             <li><a href="#partners">Partners</a></li>
                             <li><a href="our-journey.html">Our Journey</a></li>
@@ -159,7 +174,7 @@
         </div>
     </section>
 
-    <section class="products-section">
+    <section class="products-section" id="products">
         <div class="products-div">
             <div class="products-title"><b>PRODUCTS</b></div>
             <a href="images/products/1.jpg" data-lightbox="example-set"><img src="images/products/1.jpg" alt=""
@@ -212,7 +227,7 @@
                 <div class="row footer-sidebar">
                     <div class="widget about-us-widget col-sm-6 col-lg-3">
                         <a href="index.html" class="brand_logo">
-                            <img src="images/header/logo.png" alt="logo image" />
+                            <img src="images/header/logo-1.png" alt="logo image" />
                         </a>
                         <p>
                             Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit
@@ -222,12 +237,14 @@
                         <div class="social-icon row m0">
                             <ul class="nav">
                                 <li>
-                                    <a href="#"><i class="fa fa-twitter"></i></a>
+                                    <a href="https://www.instagram.com/anejamplywood" target="_blank"><i
+                                            class="fa fa-instagram"></i></a>
                                 </li>
                                 <li>
-                                    <a href="#"><i class="fa fa-linkedin-square"></i></a>
+                                    <a href="https://goo.gl/maps/maFUh6HCmYpeWxBm8" target="_blank"><i
+                                            class="fa fa-google"></i></a>
                                 </li>
-                                <li>
+                                <!-- <li>
                                     <a href="#"><i class="fa fa-facebook-square"></i></a>
                                 </li>
                                 <li>
@@ -235,7 +252,7 @@
                                 </li>
                                 <li>
                                     <a href="#"><i class="fa fa-pinterest-square"></i></a>
-                                </li>
+                                </li> -->
                             </ul>
                         </div>
                     </div>
@@ -270,13 +287,22 @@
                                 <li>
                                     <i class="fa fa-map-marker"></i>
                                     <div class="fleft location_address">
-                                        New showroom New, near Lakshmi Palace, Dashmesh Colony, Rajpura, Punjab 140401
+                                        Show Room 4A, Opp Dargah Masoom Ali Shah,, Under Bridge Road, Rajpura, Punjab
+                                        140401
                                     </div>
                                 </li>
                                 <li>
                                     <i class="fa fa-phone"></i>
                                     <div class="fleft contact_no">
-                                        <a href="#">98140-40328</a>
+                                        <a href="tel:+9198140 40328">Parveen Aneja</a>
+                                    </div>
+                                    <i class="fa fa-phone"></i>
+                                    <div class="fleft contact_no">
+                                        <a href="tel:+9197797 76728">Raunaq Aneja</a>
+                                    </div>
+                                    <i class="fa fa-phone"></i>
+                                    <div class="fleft contact_no">
+                                        <a href="tel:+9196559 15428">Pallav Aneja</a>
                                     </div>
                                 </li>
                                 <li>
@@ -288,8 +314,8 @@
                                 <li>
                                     <i class="icon icon-WorldWide"></i>
                                     <div class="fleft service_time">
-                                        Mon - Sat : 9am to 8pm <br>
-                                        Sun : 9am to 2pm
+                                        Mon - Sat : 9:15am to 8pm <br>
+                                        Sun : 9:30am to 2pm
                                     </div>
                                 </li>
                             </ul>
@@ -298,11 +324,13 @@
                     <div class="widget widget4 widget-form col-sm-6 col-lg-3">
                         <h4 class="widget_title">Drop a message</h4>
                         <div class="widget-contact-list row m0">
-                            <form class="submet-form row m0" action="#" method="post">
-                                <input type="text" class="form-control" id="name" placeholder="Name" />
-                                <input type="email" class="form-control" id="email" placeholder="Email Address" />
-                                <textarea class="form-control message" placeholder="Message"></textarea>
-                                <button class="submit" type="submit">submit now</button>
+                            <form class="submet-form row m0">
+                                <input type="text" class="form-control" id="name" placeholder="Name" required />
+                                <!-- <input type="email" class="form-control" id="email" placeholder="Email Address" /> -->
+                                <input type="tel" class="form-control" id="number" placeholder="Phone Number" required>
+                                <textarea class="form-control message" id="message-box"
+                                    placeholder="Message"></textarea>
+                                <button class="submit" type="button" onclick="Send()">submit now</button>
                             </form>
                         </div>
                     </div>
@@ -313,14 +341,14 @@
             <div class="container">
                 <div class="row">
                     <div class="col-sm-8">
-                        Copyright &copy; <a href="index.html">WoodWorkshop</a> 2016.
+                        Copyright <a href="/">&copy; Aneja Masterji's Plywood</a>.
                         <br class="visible-xs" />
                         All rights reserved.
                     </div>
-                    <div class="right col-sm-4">
+                    <!-- <div class="right col-sm-4">
                         Created by:
                         <a href="#">Sarthak</a>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </div>
@@ -401,7 +429,6 @@
                 newTop = minTop;
                 myImage.style.left = "10%";
             }
-            console.log(scrollPosition);
             if (scrollPosition >= 63) {
                 document.querySelector(".brand_logo img").style.display = "inline-block";
             } else {
@@ -414,6 +441,46 @@
             myImage.style.left = newLeft + "px"
             myImage.style.opacity = newOpacity;
         });
+    </script>
+    <script src="https://smtpjs.com/v3/smtp.js">
+    </script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script>
+        function Send() {
+            var name = document.getElementById("name").value;
+            var number = document.getElementById("number").value;
+            var message = document.getElementById("message-box").value;
+
+            if (name === "" || number === "") {
+                alert("Fill Name and Number in correct Format")
+                return;
+            }
+
+            var body = "Name: " + name + "<br/> Number: " + number + "<br/> Message : " + message
+
+
+
+            Email.send({
+                SecureToken: "3ba672b2-c1b8-45da-b0ef-50d360abc707",
+                To: 'sarthak2352003@gmail.com',
+                From: "sarthakweddingcard@gmail.com",
+                Subject: "New Enquiry",
+                Body: body
+            }).then(
+                message => {
+                    if (message == 'OK') {
+                        swal("Successful!", "Your Form is Submitted", "success", {
+                            button: "OK",
+                        });
+                    }
+                    else {
+                        swal("Something Went Wrong", "Your Form is not Submitted", "error", {
+                            button: "OK",
+                        });
+                    }
+                }
+            );
+        }
     </script>
 </body>
 

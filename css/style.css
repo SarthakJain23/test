@@ -327,7 +327,7 @@ header.row.affix .social-info {
   .navbar-default .menu .navbar-collapse {
     position: absolute;
     float: none;
-    padding: 0 15px;
+    padding: 20px 15px;
     width: 100%;
     top: 100%;
     border: none;
@@ -6457,7 +6457,7 @@ a .products-details-cat i {
 
 .products-div {
   display: grid;
-  grid-template-columns: repeat(6, auto);
+  grid-template-columns: 15vw repeat(5, 17vw);
   grid-template-rows: repeat(4, 27%);
   width: 100%;
   height: 90%;
@@ -6474,6 +6474,42 @@ a .products-details-cat i {
   writing-mode: vertical-lr;
   text-orientation: mixed;
   transition: all 1s ease;
+}
+
+@media (max-width: 1199px) {
+  .products-div {
+    grid-template-columns: repeat(5, 20vw);
+    grid-template-rows: 12vw repeat(4, 22vw);
+    height: 100%;
+    z-index: 2;
+    position: relative;
+  }
+
+  .products-title {
+    grid-row: auto;
+    grid-column: span 5;
+    transform: rotate(0deg);
+    writing-mode: inherit;
+    text-orientation: mixed;
+    transition: all 1s ease;
+  }
+}
+
+@media (max-width: 991px) {
+  .products-title {
+    font-size: 9rem;
+  }
+}
+
+@media (max-width: 624px) {
+  .products-title {
+    font-size: 7rem;
+  }
+}
+@media (max-width: 479px) {
+  .products-title {
+    font-size: 5rem;
+  }
 }
 
 .products-div img {
